@@ -12,21 +12,22 @@ module.exports = class extends Generator {
 
     prompting() {
         this.log(yosay('Bem-vindo ao gerador de solution .NET genérica com DDD!'))
-        this.prompt({
+
+        return this.prompt([{
             type: "input",
             name: "solutionName",
             message: "Nome da solution",
             default: this.config.get("solutionName") || "CustomProject"
-        }, function(answers) {
+        }]).then((answers) => {
             this.config.set("solutionName", answers.solutionName);
             this.config.save();
-            done();
-        }.bind(this));
+        });
     }
 
     configuring() {}
 
     writing() {
+        this.log(this.config.get("solutionName"))
         template: {
             this.fs.copyTpl(
                 this.templatePath(),
