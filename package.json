@@ -1,0 +1,15 @@
+{
+  "name": "generator-customdddnetsolution",
+  "version": "1.0.0",
+  "description": "Custom .NET solution template based on a custom DDD implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomaz Moura",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^1.1.1",
+    "yosay": "^2.0.0"
+  }
+}
