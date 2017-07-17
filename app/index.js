@@ -2,6 +2,7 @@
 
 const Generator = require('yeoman-generator');
 var yosay = require('yosay');
+var rename = require('gulp-rename');
 
 module.exports = class extends Generator {
     constructor(args, opts) {
@@ -27,8 +28,12 @@ module.exports = class extends Generator {
     configuring() {}
 
     writing() {
-        this.log(this.config.get("solutionName"))
         template: {
+            var solutionName = this.config.get("solutionName");
+            this.registerTransformStream(rename(function(path) {
+                path.basename = path.basename.replace(/(CustomGeneratedProject)/g, solutionName);
+                path.dirname = path.dirname.replace(/(CustomGeneratedProject)/g, solutionName);
+            }));
             this.fs.copyTpl(
                 this.templatePath(),
                 this.destinationPath(), {

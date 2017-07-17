@@ -9,6 +9,7 @@
   "author": "Thomaz Moura",
   "license": "MIT",
   "dependencies": {
+    "gulp-rename": "^1.2.2",
     "yeoman-generator": "^1.1.1",
     "yosay": "^2.0.0"
   }
