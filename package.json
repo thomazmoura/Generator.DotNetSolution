@@ -1,12 +1,15 @@
 {
     "name": "generator-ddddotnetsolution",
     "version": "1.0.0",
-    "description": "Custom .NET solution template based on a custom DDD implementation",
+    "description": "Custom .NET solution template based on a custom DDD implementation (portuguese)",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Thomaz Moura",
+    "keywords": [
+        "yeoman-generator", "DDD", ".NET", ".NET Framework", "PT-BR"
+    ],
     "license": "MIT",
     "dependencies": {
         "gulp-rename": "^1.2.2",
