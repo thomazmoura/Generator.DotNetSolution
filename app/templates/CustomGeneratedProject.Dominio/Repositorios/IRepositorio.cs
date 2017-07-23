@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace CustomGeneratedProject.Dominio.Repositorios
+namespace <%= solutionName %>.Dominio.Repositorios
 {
     /// <summary> Interface padrão para repositórios do sistema. Possui métodos para CRUD com o tipo informado. </summary>
     /// <typeparam name="TEntidade"> O tipo específico do repositório. </typeparam>
