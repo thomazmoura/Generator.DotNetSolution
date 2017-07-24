@@ -8,5 +8,5 @@ foreach ($file in $configFiles)
 {
     (Get-Content $file.PSPath) |
     Foreach-Object { $_ -replace $originalText, $newText } |
-    Set-Content $file.PSPath
+    Set-Content $file.PSPath -Encoding "UTF8"
 }
