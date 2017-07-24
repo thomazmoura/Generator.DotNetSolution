@@ -1,6 +1,6 @@
-﻿using System.Data.Entity;
+using System.Data.Entity;
 
-namespace <%= solutionName %>.Dados
+namespace CustomGeneratedProject.Dados
 {
     public class CustomGeneratedContext: DbContext
     {
