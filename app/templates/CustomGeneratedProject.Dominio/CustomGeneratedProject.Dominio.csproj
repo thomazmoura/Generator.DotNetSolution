@@ -7,8 +7,8 @@
     <ProjectGuid>{EF4DBDF1-AC7D-4CA0-A284-052ED8043067}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace><%= solutionName %>.Dominio</RootNamespace>
-    <AssemblyName><%= solutionName %>.Dominio</AssemblyName>
+    <RootNamespace>CustomGeneratedProject.Dominio</RootNamespace>
+    <AssemblyName>CustomGeneratedProject.Dominio</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

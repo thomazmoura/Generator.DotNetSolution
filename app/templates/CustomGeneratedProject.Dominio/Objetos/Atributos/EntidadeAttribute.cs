@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace <%= solutionName %>.Dominio.Objetos.Atributos
+namespace CustomGeneratedProject.Dominio.Objetos.Atributos
 {
     public class EntidadeAttribute: Attribute { }
 }

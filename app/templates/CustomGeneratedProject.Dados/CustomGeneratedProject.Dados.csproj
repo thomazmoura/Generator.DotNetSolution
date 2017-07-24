@@ -7,8 +7,8 @@
     <ProjectGuid>{717C2683-187E-42AB-9EDE-B71C9D856877}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace><%= solutionName %>.Dados</RootNamespace>
-    <AssemblyName><%= solutionName %>.Dados</AssemblyName>
+    <RootNamespace>CustomGeneratedProject.Dados</RootNamespace>
+    <AssemblyName>CustomGeneratedProject.Dados</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="<%= solutionName %>Context.cs" />
+    <Compile Include="CustomGeneratedProjectContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\Repositorio.cs" />
   </ItemGroup>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\<%= solutionName %>.Dominio\<%= solutionName %>.Dominio.csproj">
+    <ProjectReference Include="..\CustomGeneratedProject.Dominio\CustomGeneratedProject.Dominio.csproj">
       <Project>{ef4dbdf1-ac7d-4ca0-a284-052ed8043067}</Project>
-      <Name><%= solutionName %>.Dominio</Name>
+      <Name>CustomGeneratedProject.Dominio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
