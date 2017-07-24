@@ -1,6 +1,6 @@
 {
     "name": "generator-dotnetsolution",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Custom .NET solution template based on a custom DDD implementation (portuguese)",
     "main": "index.js",
     "scripts": {
