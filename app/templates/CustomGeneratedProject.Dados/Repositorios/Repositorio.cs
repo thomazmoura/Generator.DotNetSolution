@@ -1,4 +1,4 @@
-﻿using <<%= solutionName %>Dominio.Repositorios;
+﻿using <%= solutionName %>.Dominio.Repositorios;
 using System;
 using System.Data.Entity;
 using System.Linq;
