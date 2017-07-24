@@ -1,9 +1,9 @@
-﻿using System.Data.Entity;
+using System.Data.Entity;
 
-namespace <%= solutionName %>.Dados
+namespace CustomGeneratedProject.Dados
 {
-    public class <%= solutionName %>Context: DbContext
+    public class CustomGeneratedProjectContext: DbContext
     {
-        public <%= solutionName %>Context(): base("<%= solutionName %>Context") { }
+        public CustomGeneratedProjectContext(): base("CustomGeneratedProjectContext") { }
     }
 }
