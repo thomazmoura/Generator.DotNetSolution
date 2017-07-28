@@ -4,7 +4,7 @@
     "description": "Custom .NET solution template based on a custom DDD implementation (portuguese)",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha"
     },
     "author": "Thomaz Moura",
     "repository": {
@@ -12,11 +12,16 @@
         "url": "https://github.com/thomazpadilha/Generator.DotNetSolution"
     },
     "keywords": [
-        "yeoman-generator", "DDD", ".NET", ".NET Framework", "PT-BR"
+        "yeoman-generator",
+        "DDD",
+        ".NET",
+        ".NET Framework",
+        "PT-BR"
     ],
     "license": "MIT",
     "dependencies": {
         "gulp-rename": "^1.2.2",
+        "mocha": "^3.4.2",
         "yeoman-generator": "^1.1.1",
         "yosay": "^2.0.0"
     }
