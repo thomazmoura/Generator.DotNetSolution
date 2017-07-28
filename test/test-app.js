@@ -1,16 +1,19 @@
 'use strict';
+var helpers = require('yeoman-test');
+var assert = require('yeoman-assert');
 var path = require('path');
-var assert = require('yeoman-generator').assert;
-var helpers = require('yeoman-generator').test;
 
 describe('dotnetsolution', function() {
     describe('default', function() {
-        before(function() {
-
+        before(function(done) {
+            helpers.run(path.join(__dirname, '../app'))
+                .withPrompts({ solutionName: 'TestSolution' })
+                .withOptions({ skipInstall: true })
+                .on('end', done)
         });
 
         it('create files', function() {
-
+            assert.file(['TestSolution.sln']);
         });
     });
 });

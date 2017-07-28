@@ -13,7 +13,6 @@
     },
     "keywords": [
         "yeoman-generator",
-        "DDD",
         ".NET",
         ".NET Framework",
         "PT-BR"
@@ -22,7 +21,10 @@
     "dependencies": {
         "gulp-rename": "^1.2.2",
         "mocha": "^3.4.2",
+        "path": "^0.12.7",
+        "yeoman-assert": "^3.0.0",
         "yeoman-generator": "^1.1.1",
+        "yeoman-test": "^1.7.0",
         "yosay": "^2.0.0"
     }
 }
