@@ -12,8 +12,12 @@ describe('dotnetsolution', function() {
                 .on('end', done)
         });
 
-        it('create files', function() {
-            assert.file(['TestSolution.sln']);
+        it('Cria os arquivos esperados', function() {
+            assert.file([
+                'TestSolution.sln',
+                'TestSolution.Dominio/Repositorios/IRepositorio.cs',
+                'TestSolution.Dominio/Objetos/Atributos/EntidadeAttribute.cs'
+            ]);
         });
     });
 });
