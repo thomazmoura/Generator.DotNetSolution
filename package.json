@@ -1,10 +1,11 @@
 {
     "name": "generator-dotnetsolution",
-    "version": "1.0.6",
-    "description": "Custom .NET solution template based on a custom DDD implementation (portuguese)",
+    "version": "1.0.7",
+    "description": "Implementação de arquitetura de solução .NET básica.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha",
+        "build-test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=__buildpath__/test/testResults.xml"
     },
     "author": "Thomaz Moura",
     "repository": {
@@ -12,12 +13,22 @@
         "url": "https://github.com/thomazpadilha/Generator.DotNetSolution"
     },
     "keywords": [
-        "yeoman-generator", "DDD", ".NET", ".NET Framework", "PT-BR"
+        "yeoman-generator",
+        ".NET",
+        ".NET Framework",
+        "PT-BR"
     ],
     "license": "MIT",
     "dependencies": {
         "gulp-rename": "^1.2.2",
+        "gulp-replace": "^0.6.1",
+        "mkdirp": "^0.5.1",
+        "mocha": "^3.4.2",
+        "mocha-junit-reporter": "^1.13.0",
+        "path": "^0.12.7",
+        "yeoman-assert": "^3.0.0",
         "yeoman-generator": "^1.1.1",
+        "yeoman-test": "^1.7.0",
         "yosay": "^2.0.0"
     }
 }

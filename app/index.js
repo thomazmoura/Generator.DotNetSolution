@@ -3,6 +3,8 @@
 const Generator = require('yeoman-generator');
 var yosay = require('yosay');
 var rename = require('gulp-rename');
+var replace = require('gulp-replace');
+var mkdirp = require('mkdirp');
 
 module.exports = class extends Generator {
     constructor(args, opts) {
@@ -29,17 +31,32 @@ module.exports = class extends Generator {
 
     writing() {
         template: {
+            mkdirp(this.templatePath("../temp"));
+
+            this.fs.copy(
+                this.templatePath(),
+                this.templatePath("../temp"), {
+                    process: function(content) {
+                        var regEx = new RegExp(/InsertSolutionNamespaceHere/, 'g')
+                        return content.toString().replace(regEx, '<%= solutionName %>');
+                    }
+                }
+            );
+
             var solutionName = this.config.get("solutionName");
             this.registerTransformStream(rename(function(path) {
-                path.basename = path.basename.replace(/(CustomGeneratedProject)/g, solutionName);
-                path.dirname = path.dirname.replace(/(CustomGeneratedProject)/g, solutionName);
+                path.basename = path.basename.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
+                path.dirname = path.dirname.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
             }));
+
             this.fs.copyTpl(
-                this.templatePath(),
+                this.templatePath("../temp"),
                 this.destinationPath(), {
                     solutionName: this.config.get("solutionName")
                 }
             );
+
+            this.fs.delete(this.templatePath("../temp"));
         }
     }
 
