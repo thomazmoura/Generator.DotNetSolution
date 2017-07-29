@@ -7,8 +7,8 @@
     <ProjectGuid>{717C2683-187E-42AB-9EDE-B71C9D856877}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomGeneratedProject.Dados</RootNamespace>
-    <AssemblyName>CustomGeneratedProject.Dados</AssemblyName>
+    <RootNamespace>InsertSolutionNamespaceHere.Dados</RootNamespace>
+    <AssemblyName>InsertSolutionNamespaceHere.Dados</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomGeneratedProjectContext.cs" />
+    <Compile Include="InsertSolutionNamespaceHereContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\Repositorio.cs" />
   </ItemGroup>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomGeneratedProject.Dominio\CustomGeneratedProject.Dominio.csproj">
+    <ProjectReference Include="..\InsertSolutionNamespaceHere.Dominio\InsertSolutionNamespaceHere.Dominio.csproj">
       <Project>{ef4dbdf1-ac7d-4ca0-a284-052ed8043067}</Project>
-      <Name>CustomGeneratedProject.Dominio</Name>
+      <Name>InsertSolutionNamespaceHere.Dominio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

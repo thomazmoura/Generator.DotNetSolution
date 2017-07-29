@@ -7,8 +7,8 @@
     <ProjectGuid>{91C20B8F-5FBF-4A5F-9EB8-BE3A6CFDA3CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomGeneratedProject.Dependencias</RootNamespace>
-    <AssemblyName>CustomGeneratedProject.Dependencias</AssemblyName>
+    <RootNamespace>InsertSolutionNamespaceHere.Dependencias</RootNamespace>
+    <AssemblyName>InsertSolutionNamespaceHere.Dependencias</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

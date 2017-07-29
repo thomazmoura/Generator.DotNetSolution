@@ -1,9 +1,9 @@
-﻿using CustomGeneratedProject.Dominio.Repositorios;
+﻿using InsertSolutionNamespaceHere.Dominio.Repositorios;
 using System;
 using System.Data.Entity;
 using System.Linq;
 
-namespace CustomGeneratedProject.Dados.Repositorios
+namespace InsertSolutionNamespaceHere.Dados.Repositorios
 {
     /// <summary> Repositório padrão para CRUD básico. </summary>
     /// <typeparam name="T"> Tipo (classe) de dados que esse repositório manipulará. </typeparam>

@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity;
 
-namespace CustomGeneratedProject.Dados
+namespace InsertSolutionNamespaceHere.Dados
 {
-    public class CustomGeneratedProjectContext: DbContext
+    public class InsertSolutionNamespaceHereContext: DbContext
     {
-        public CustomGeneratedProjectContext(): base("CustomGeneratedProjectContext") { }
+        public InsertSolutionNamespaceHereContext(): base("InsertSolutionNamespaceHereContext") { }
     }
 }
