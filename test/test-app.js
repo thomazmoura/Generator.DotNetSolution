@@ -19,5 +19,14 @@ describe('dotnetsolution', function() {
                 'TestSolution.Dominio/Objetos/Atributos/EntidadeAttribute.cs'
             ]);
         });
+
+        it('Edita o conteúdo como esperado', function() {
+            assert.fileContent([
+                ['TestSolution.sln', /TestSolution.Dominio/],
+                ['TestSolution.Dominio/Repositorios/IRepositorio.cs', /namespace TestSolution.Dominio.Repositorios/],
+                ['TestSolution.Dominio/Properties/AssemblyInfo.cs', /assembly: AssemblyTitle\("TestSolution.Dominio"\)/]
+            ]);
+
+        });
     });
 });
