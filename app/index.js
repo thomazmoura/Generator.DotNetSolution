@@ -31,8 +31,8 @@ module.exports = class extends Generator {
         template: {
             var solutionName = this.config.get("solutionName");
             this.registerTransformStream(rename(function(path) {
-                path.basename = path.basename.replace(/(CustomGeneratedProject)/g, solutionName);
-                path.dirname = path.dirname.replace(/(CustomGeneratedProject)/g, solutionName);
+                path.basename = path.basename.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
+                path.dirname = path.dirname.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
             }));
             this.fs.copyTpl(
                 this.templatePath(),
