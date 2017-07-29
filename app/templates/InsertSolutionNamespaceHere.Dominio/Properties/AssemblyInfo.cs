@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CustomGeneratedProject.Testes.Unitarios")]
+[assembly: AssemblyTitle("InsertSolutionNamespaceHere.Dominio")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CustomGeneratedProject.Testes.Unitarios")]
+[assembly: AssemblyProduct("InsertSolutionNamespaceHere.Dominio")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("725219e9-824f-46af-8a8b-f06bb4e8fa08")]
+[assembly: Guid("ef4dbdf1-ac7d-4ca0-a284-052ed8043067")]
 
 // Version information for an assembly consists of the following four values:
 //

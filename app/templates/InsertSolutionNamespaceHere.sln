@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Teste", "4 - Teste", "{BCF04B29-2424-40F9-84E1-A4C6E1FDFBAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeneratedProject.Dominio", "CustomGeneratedProject.Dominio\CustomGeneratedProject.Dominio.csproj", "{EF4DBDF1-AC7D-4CA0-A284-052ED8043067}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertSolutionNamespaceHere.Dominio", "InsertSolutionNamespaceHere.Dominio\InsertSolutionNamespaceHere.Dominio.csproj", "{EF4DBDF1-AC7D-4CA0-A284-052ED8043067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeneratedProject.Dados", "CustomGeneratedProject.Dados\CustomGeneratedProject.Dados.csproj", "{717C2683-187E-42AB-9EDE-B71C9D856877}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertSolutionNamespaceHere.Dados", "InsertSolutionNamespaceHere.Dados\InsertSolutionNamespaceHere.Dados.csproj", "{717C2683-187E-42AB-9EDE-B71C9D856877}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeneratedProject.Dependencias", "CustomGeneratedProject.Dependencias\CustomGeneratedProject.Dependencias.csproj", "{91C20B8F-5FBF-4A5F-9EB8-BE3A6CFDA3CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertSolutionNamespaceHere.Dependencias", "InsertSolutionNamespaceHere.Dependencias\InsertSolutionNamespaceHere.Dependencias.csproj", "{91C20B8F-5FBF-4A5F-9EB8-BE3A6CFDA3CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeneratedProject.Testes.Unitarios", "CustomGeneratedProject.Testes.Unitarios\CustomGeneratedProject.Testes.Unitarios.csproj", "{725219E9-824F-46AF-8A8B-F06BB4E8FA08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertSolutionNamespaceHere.Testes.Unitarios", "InsertSolutionNamespaceHere.Testes.Unitarios\InsertSolutionNamespaceHere.Testes.Unitarios.csproj", "{725219E9-824F-46AF-8A8B-F06BB4E8FA08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeneratedProject.Testes.Integracao", "CustomGeneratedProject.Testes.Integracao\CustomGeneratedProject.Testes.Integracao.csproj", "{074CD51F-7DBF-4FC7-8DDF-1087415E313A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertSolutionNamespaceHere.Testes.Integracao", "InsertSolutionNamespaceHere.Testes.Integracao\InsertSolutionNamespaceHere.Testes.Integracao.csproj", "{074CD51F-7DBF-4FC7-8DDF-1087415E313A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
