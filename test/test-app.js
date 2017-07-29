@@ -23,6 +23,7 @@ describe('dotnetsolution', function() {
         it('Edita o conteúdo como esperado', function() {
             assert.fileContent([
                 ['TestSolution.sln', /TestSolution.Dominio/],
+                ['TestSolution.sln', /TestSolution.Dados/],
                 ['TestSolution.Dominio/Repositorios/IRepositorio.cs', /namespace TestSolution.Dominio.Repositorios/],
                 ['TestSolution.Dominio/Properties/AssemblyInfo.cs', /assembly: AssemblyTitle\("TestSolution.Dominio"\)/]
             ]);
