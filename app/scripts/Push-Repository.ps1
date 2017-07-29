@@ -3,6 +3,7 @@ Param(
   [string]$branch
 )
 
+$OutputEncoding = [System.Text.Encoding]::UTF8
 $pushUrl =  "https://$token@github.com/thomazpadilha/Generator.DotNetSolution.git";
 $branchRef = "head:$branch"
 
