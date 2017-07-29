@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "mocha",
-        "build-test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=$(Build.SourcesDirectory)/test/testResults.xml"
+        "build-test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=__Build.SourcesDirectory__/test/testResults.xml"
     },
     "author": "Thomaz Moura",
     "repository": {
