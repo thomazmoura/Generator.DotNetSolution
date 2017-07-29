@@ -20,6 +20,7 @@
     "license": "MIT",
     "dependencies": {
         "gulp-rename": "^1.2.2",
+        "gulp-replace": "^0.6.1",
         "mocha": "^3.4.2",
         "path": "^0.12.7",
         "yeoman-assert": "^3.0.0",
