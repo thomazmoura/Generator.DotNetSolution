@@ -5,6 +5,8 @@ var yosay = require('yosay');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
 var mkdirp = require('mkdirp');
+var fs = require('fs');
+var chalk = require('chalk');
 
 module.exports = class extends Generator {
     constructor(args, opts) {
@@ -57,6 +59,11 @@ module.exports = class extends Generator {
             );
 
             this.fs.delete(this.templatePath("../temp"));
+
+            var logger = this;
+            fs.rmdir(this.templatePath("../temp"), function(erro) {
+                logger.log(chalk.red("Ocorreu algum problema ao apagar pasta temporária. Detalhes: " + erro));
+            });
         }
     }
 
