@@ -20,8 +20,10 @@
     ],
     "license": "MIT",
     "dependencies": {
+        "chalk": "^2.0.1",
         "gulp-rename": "^1.2.2",
         "gulp-replace": "^0.6.1",
+        "lodash": "^4.17.4",
         "mkdirp": "^0.5.1",
         "mocha": "^3.4.2",
         "mocha-junit-reporter": "^1.13.0",
