@@ -1,6 +1,6 @@
 {
     "name": "generator-dotnetsolution",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Implementação de arquitetura de solução .NET básica.",
     "main": "index.js",
     "scripts": {
