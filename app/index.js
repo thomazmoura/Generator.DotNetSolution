@@ -62,7 +62,8 @@ module.exports = class extends Generator {
 
             var logger = this;
             fs.rmdir(this.templatePath("../temp"), function(erro) {
-                logger.log(chalk.red("Ocorreu algum problema ao apagar pasta temporária. Detalhes: " + erro));
+                if (erro !== null)
+                    logger.log(chalk.red("Ocorreu algum problema ao apagar pasta temporária. Detalhes: " + erro));
             });
         }
     }
