@@ -17,6 +17,15 @@ module.exports = class extends Generator {
     initializing() {}
 
     prompting() {
+        let autoSolutionName = this.config.get("autoSolutionName");
+        let autoSolutionShortName = this.config.get("autoSolutionShortName");
+        if(autoSolutionName && autoSolutionShortName){
+            this.config.set("solutionName", autoSolutionName);
+            this.config.set("solutionShortName", autoSolutionShortName);
+            this.config.save();
+            return;
+        }
+
         this.log(yosay('Bem-vindo ao gerador de solution .NET genérica com DDD!'))
 
         var generator = this;
