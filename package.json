@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "mocha",
-        "build-test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=__buildpath__/test/testResults.xml"
+        "build-test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=__buildpath__/test/testResults.xml",
+        "yo": "yo ./app/index.js"
     },
     "author": "Thomaz Moura",
     "repository": {
@@ -31,6 +32,7 @@
         "yeoman-assert": "^3.0.0",
         "yeoman-generator": "^1.1.1",
         "yeoman-test": "^1.7.0",
+        "yo": "^2.0.0",
         "yosay": "^2.0.0"
     }
 }
