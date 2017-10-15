@@ -4,7 +4,6 @@ const Generator = require('yeoman-generator');
 var yosay = require('yosay');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
-var mkdirp = require('mkdirp');
 var fs = require('fs');
 var _ = require('lodash');
 var chalk = require('chalk');
@@ -58,8 +57,6 @@ module.exports = class extends Generator {
 
     writing() {
         template: {
-            mkdirp(this.templatePath("temp"));
-
             this.fs.copy(
                 this.templatePath(),
                 this.templatePath("temp"), {
