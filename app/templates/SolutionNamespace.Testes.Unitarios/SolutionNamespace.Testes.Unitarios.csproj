@@ -7,8 +7,8 @@
     <ProjectGuid>{725219E9-824F-46AF-8A8B-F06BB4E8FA08}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InsertSolutionNamespaceHere.Testes.Unitarios</RootNamespace>
-    <AssemblyName>InsertSolutionNamespaceHere.Testes.Unitarios</AssemblyName>
+    <RootNamespace>SolutionNamespace.Testes.Unitarios</RootNamespace>
+    <AssemblyName>SolutionNamespace.Testes.Unitarios</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InsertSolutionNamespaceHere.Dominio.Objetos.Atributos
+namespace SolutionNamespace.Dominio.Objetos.Atributos
 {
     public class EntidadeAttribute: Attribute { }
 }

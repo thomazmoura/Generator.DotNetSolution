@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity;
 
-namespace InsertSolutionNamespaceHere.Dados
+namespace SolutionNamespace.Dados
 {
-    public class InsertSolutionNameHereContext: DbContext
+    public class SolutionNameContext: DbContext
     {
-        public InsertSolutionNameHereContext(): base("InsertSolutionNameHereContext") { }
+        public SolutionNameContext(): base("SolutionNameContext") { }
     }
 }

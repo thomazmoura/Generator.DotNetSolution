@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("InsertSolutionNamespaceHere.Testes.Integracao")]
+[assembly: AssemblyTitle("SolutionNamespace.Testes.Integracao")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("InsertSolutionNamespaceHere.Testes.Integracao")]
+[assembly: AssemblyProduct("SolutionNamespace.Testes.Integracao")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

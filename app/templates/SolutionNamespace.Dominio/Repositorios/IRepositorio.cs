@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace InsertSolutionNamespaceHere.Dominio.Repositorios
+namespace SolutionNamespace.Dominio.Repositorios
 {
     /// <summary> Interface padrão para repositórios do sistema. Possui métodos para CRUD com o tipo informado. </summary>
     /// <typeparam name="TEntidade"> O tipo específico do repositório. </typeparam>
