@@ -58,11 +58,11 @@ module.exports = class extends Generator {
 
     writing() {
         template: {
-            mkdirp(this.templatePath("../temp"));
+            mkdirp(this.templatePath("temp"));
 
             this.fs.copy(
                 this.templatePath(),
-                this.templatePath("../temp"), {
+                this.templatePath("temp"), {
                     process: function(content) {
                         var namespaceRegEx = new RegExp(/InsertSolutionNamespaceHere/, 'g')
                         var nameRegEx = new RegExp(/InsertSolutionNameHere/, 'g')
@@ -84,20 +84,14 @@ module.exports = class extends Generator {
             }));
 
             this.fs.copyTpl(
-                this.templatePath("../temp"),
+                this.templatePath("temp"),
                 this.destinationPath(), {
                     solutionName: this.config.get("solutionName"),
                     solutionShortName: this.config.get("solutionShortName"),
                 }
             );
 
-            this.fs.delete(this.templatePath("../temp"));
-
-            var logger = this;
-            fs.rmdir(this.templatePath("../temp"), function(erro) {
-                if (erro !== null)
-                    logger.log(chalk.red("Ocorreu algum problema ao apagar pasta temporária. Detalhes: " + erro));
-            });
+            this.fs.delete(this.templatePath("temp/**/*.*"));
         }
     }
 
