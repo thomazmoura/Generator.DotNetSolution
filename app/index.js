@@ -61,8 +61,8 @@ module.exports = class extends Generator {
                 this.templatePath(),
                 this.templatePath("temp"), {
                     process: function(content) {
-                        var namespaceRegEx = new RegExp(/InsertSolutionNamespaceHere/, 'g')
-                        var nameRegEx = new RegExp(/InsertSolutionNameHere/, 'g')
+                        var namespaceRegEx = new RegExp(/SolutionNamespace/, 'g')
+                        var nameRegEx = new RegExp(/SolutionName/, 'g')
                         return content.toString()
                             .replace(namespaceRegEx, '<%= solutionName %>')
                             .replace(nameRegEx, '<%= solutionShortName %>');
@@ -73,11 +73,11 @@ module.exports = class extends Generator {
             var solutionName = this.config.get("solutionName");
             var solutionShortName = this.config.get("solutionShortName");
             this.registerTransformStream(rename(function(path) {
-                path.basename = path.basename.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
-                path.dirname = path.dirname.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
+                path.basename = path.basename.replace(/(SolutionNamespace)/g, solutionName);
+                path.dirname = path.dirname.replace(/(SolutionNamespace)/g, solutionName);
 
-                path.basename = path.basename.replace(/(InsertSolutionNameHere)/g, solutionShortName);
-                path.dirname = path.dirname.replace(/(InsertSolutionNameHere)/g, solutionShortName);
+                path.basename = path.basename.replace(/(SolutionName)/g, solutionShortName);
+                path.dirname = path.dirname.replace(/(SolutionName)/g, solutionShortName);
             }));
 
             this.fs.copyTpl(
