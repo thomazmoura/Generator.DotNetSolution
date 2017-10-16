@@ -4,7 +4,6 @@ const Generator = require('yeoman-generator');
 var yosay = require('yosay');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
-var mkdirp = require('mkdirp');
 var fs = require('fs');
 var _ = require('lodash');
 var chalk = require('chalk');
@@ -17,6 +16,15 @@ module.exports = class extends Generator {
     initializing() {}
 
     prompting() {
+        let autoSolutionName = this.config.get("autoSolutionName");
+        let autoSolutionShortName = this.config.get("autoSolutionShortName");
+        if(autoSolutionName && autoSolutionShortName){
+            this.config.set("solutionName", autoSolutionName);
+            this.config.set("solutionShortName", autoSolutionShortName);
+            this.config.save();
+            return;
+        }
+
         this.log(yosay('Bem-vindo ao gerador de solution .NET genérica com DDD!'))
 
         var generator = this;
@@ -49,14 +57,12 @@ module.exports = class extends Generator {
 
     writing() {
         template: {
-            mkdirp(this.templatePath("../temp"));
-
             this.fs.copy(
                 this.templatePath(),
-                this.templatePath("../temp"), {
+                this.templatePath("temp"), {
                     process: function(content) {
-                        var namespaceRegEx = new RegExp(/InsertSolutionNamespaceHere/, 'g')
-                        var nameRegEx = new RegExp(/InsertSolutionNameHere/, 'g')
+                        var namespaceRegEx = new RegExp(/SolutionNamespace/, 'g')
+                        var nameRegEx = new RegExp(/SolutionName/, 'g')
                         return content.toString()
                             .replace(namespaceRegEx, '<%= solutionName %>')
                             .replace(nameRegEx, '<%= solutionShortName %>');
@@ -67,28 +73,22 @@ module.exports = class extends Generator {
             var solutionName = this.config.get("solutionName");
             var solutionShortName = this.config.get("solutionShortName");
             this.registerTransformStream(rename(function(path) {
-                path.basename = path.basename.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
-                path.dirname = path.dirname.replace(/(InsertSolutionNamespaceHere)/g, solutionName);
+                path.basename = path.basename.replace(/(SolutionNamespace)/g, solutionName);
+                path.dirname = path.dirname.replace(/(SolutionNamespace)/g, solutionName);
 
-                path.basename = path.basename.replace(/(InsertSolutionNameHere)/g, solutionShortName);
-                path.dirname = path.dirname.replace(/(InsertSolutionNameHere)/g, solutionShortName);
+                path.basename = path.basename.replace(/(SolutionName)/g, solutionShortName);
+                path.dirname = path.dirname.replace(/(SolutionName)/g, solutionShortName);
             }));
 
             this.fs.copyTpl(
-                this.templatePath("../temp"),
+                this.templatePath("temp"),
                 this.destinationPath(), {
                     solutionName: this.config.get("solutionName"),
                     solutionShortName: this.config.get("solutionShortName"),
                 }
             );
 
-            this.fs.delete(this.templatePath("../temp"));
-
-            var logger = this;
-            fs.rmdir(this.templatePath("../temp"), function(erro) {
-                if (erro !== null)
-                    logger.log(chalk.red("Ocorreu algum problema ao apagar pasta temporária. Detalhes: " + erro));
-            });
+            this.fs.delete(this.templatePath("temp/**/*.*"));
         }
     }
 
